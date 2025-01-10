@@ -1,14 +1,13 @@
 import ArticleListing from "@/components/ArticleListing";
-import Header from "@/components/home/Header";
+import Header from "@/components/contract/Header";
 import MoreArticles from "@/components/home/MoreArticles";
-import SubHead from "@/components/home/SubHead";
 import SearchBar from "@/components/SearchBar";
+import React from "react";
 
-export default function Home() {
+const Contract = () => {
   return (
     <div>
       <Header />
-      <SubHead />
       <div className="flex justify-center py-2">
         <SearchBar />
       </div>
@@ -16,4 +15,6 @@ export default function Home() {
       <MoreArticles />
     </div>
   );
-}
+};
+
+export default Contract;

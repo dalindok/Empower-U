@@ -1,14 +1,13 @@
 import ArticleListing from "@/components/ArticleListing";
-import Header from "@/components/home/Header";
 import MoreArticles from "@/components/home/MoreArticles";
-import SubHead from "@/components/home/SubHead";
+import Header from "@/components/nssf/Header";
 import SearchBar from "@/components/SearchBar";
+import React from "react";
 
-export default function Home() {
+const Nssf = () => {
   return (
     <div>
       <Header />
-      <SubHead />
       <div className="flex justify-center py-2">
         <SearchBar />
       </div>
@@ -16,4 +15,6 @@ export default function Home() {
       <MoreArticles />
     </div>
   );
-}
+};
+
+export default Nssf;
