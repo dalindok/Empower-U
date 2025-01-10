@@ -87,15 +87,22 @@ const Nav = () => {
           {openMenuIndex === 1 && (
             <div className="absolute top-10 left-0 bg-white border rounded-lg shadow-lg z-50 text-base">
               <ul className="py-2">
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  ច្បាប់ឈប់សម្រាក
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  កិច្ចសន្យាការងារ
-                </li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                  បសស (បេឡាជាតិសន្តិសុខសង្គម)
-                </li>
+                <Link href="/leave/quiz">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                    ច្បាប់ឈប់សម្រាក
+                  </li>
+                </Link>
+
+                <Link href="/nssf/quiz">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                    បសស (បេឡាជាតិសន្តិសុខសង្គម)
+                  </li>
+                </Link>
+                <Link href="/contract/quiz">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                    កិច្ចសន្យាការងារ
+                  </li>
+                </Link>
               </ul>
             </div>
           )}
